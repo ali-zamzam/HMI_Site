@@ -1,13 +1,11 @@
-# The purpose of this project:
+The purpose of this project:
 
 - Use AI solutions to be able to optimize the implementation of electro mobility in France according to public transport use.
 - Measure whether more Micro-Electro mobility is needed to make it available in one place to another.
 - Create an HMI to access prediction results.
 
-<br>
-<br>
 
-# What has been done to create the predictive model:
+What has been done to create the predictive model:
 - Identify needs and issues.
 - Identify the data necessary the treatment of the project.
 - Create algorithms, prepare data, Data transformation, Data cleaning.
