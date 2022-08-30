@@ -1,0 +1,73 @@
+{% include 'head.html' %}
+{% include 'banniere.html' %}
+
+<div class="grid-x grid-margin-x align-center">
+<p><h1>Pour commencer, créez votre compte svp.</h1><p>
+  </div>
+<form data-abide novalidate action="/setsaisie" method="post">
+  <div data-abide-error class="alert callout" style="display: none;">
+    <p><i class="fi-alert"></i> Il y a des erreurs dans votre formulaire d'inscription.</p>
+  </div>
+  <br>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x align-bottom">
+      <div class="cell small-6">
+          <div class="cell small-12">
+            <label>Pseudo Required
+              <input name="pseudo" type="text" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required>
+              <span class="form-error">
+                Yo, tu ferais mieux de le remplir, c'est obligatoire.
+              </span>
+            </label>
+          </div>
+<div class="cell small-12">
+            <label>Password Required
+              <input name="password" type="password" id="password" placeholder="YOUR PASWOORD" aria-describedby="example1Hint2" aria-errormessage="example1Error2" required >
+              <span class="form-error">
+                I'm required!
+              </span>
+            </label>
+            <p class="help-text" id="example1Hint2">Entrez un mot de passe s'il vous plaît.</p>
+          </div>
+          <div class="cell small-12">
+            <label>Re-enter Password
+              <input type="password" placeholder="YOUR PASWOORD" aria-describedby="example1Hint3" aria-errormessage="example1Error3" required pattern="alpha_numeric" data-equalto="password">
+              <span class="form-error">
+                Hé, les mots de passe sont censés correspondre!
+              </span>
+            </label>
+          </div>
+        </div>
+      <div class="cell small-6">
+<form action="/setsaisie" method="post">
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="medium-6 cell">
+        <label>Nom
+          <input type="text" name="Nom" placeholder="Nom..">
+        </label>
+      </div>
+      <div class="medium-6 cell">
+        <label>Pseudo
+          <input type="text" name="Pseudo" placeholder="Pseudo..">
+        </label>
+      </div>
+    </div>
+  </div>
+    <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <fieldset class="cell large-6">
+        <button class="button" type="submit" value="Submit">Submit</button>
+      </fieldset>
+      <fieldset class="cell large-6">
+        <button class="button" type="reset" value="Reset">Reset</button>
+      </fieldset>
+    </div>
+  </div>
+</form>
+<hr>
+<div class="grid-x grid-padding-x align-center">
+    <p style="color:black;" class="italic">Ce site a été conçu dans le but de suivre et développer les échanges et projets collaboratifs concernant l'électromobilité.<br></p>
+</div>
+
+{% include 'bas.html' %}

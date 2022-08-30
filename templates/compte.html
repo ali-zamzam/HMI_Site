@@ -1,0 +1,19 @@
+{% include 'head.html' %}
+{% include 'menu.html' %}
+{% include 'banniere.html' %}
+<style>
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+p.italic {
+  font-style: normal;
+}
+</style>
+
+<br>
+<h3>{{ valdic }}</h3>
+
+<div class="grid-x grid-padding-x align-center">
+    <p style="color:red" class="italic">Ce site est lié à un projet d'étude et nous l'avons fait pour mettre en oeuvre notre projet. Ce site n'a aucun lien commercial ou puplicitaire...<a class="p-2" href="/Mention_legales/{{ profile }}">Mention Légales</a></p>
+</div>
+{% include 'bas.html' %}

@@ -1,0 +1,72 @@
+{% include 'head.html' %}
+{% include 'menu.html' %}
+
+
+<hr>
+<div class="grid-x grid-margin-x align-center">
+<h1><p style="color:black;" class="normal">Rentrer Les Paramètres De La Zone D'Etude</p></h1>
+</div>
+<div class="grid-x grid-margin-x align-center">
+    <form class="modal-content animate" action="/results/{{ profile }}" method="POST">
+        <div class="grid-x grid-padding-x">
+              <div class="medium-6 cell">
+                    <label for="surface"><b>Surface d’étude (en km²)</b>
+                        <input type="text" placeholder="Enter la surface de la zone d'étude" name="surface" required>
+                    </label>
+              </div>
+        <div class="medium-6 cell">
+                <label for="habitants"><b>Nombre d’habitants dans la surface d’étude</b>
+                    <input type="text" placeholder="Enter le nombre d'habitants" name="habitants" required>
+                </label>
+          </div>
+
+        <div class="medium-6 cell">
+                <label for="commerce"><b>Nombre de commerces et d'entreprises dans la surface d’étude</b>
+                     <input type="text" placeholder="Enter le nombre de commerce" name="commerce" required>
+                </label>
+        <div class="medium-6 cell">
+                <label for="arrets"><b>Nombre d’arrêts de bus dans la surface d’étude</b>
+                    <input type="text" placeholder="Enter le nombre d'arrêts de Bus" name="arrets" required>
+                </label>
+        <div class="medium-6 cell">
+            <label for="voyageurs"><b>Nombre de voyageurs SNCF journalier ( 0 Si Aucun )</b>
+                <input type="text" placeholder="Enter le nombre de voyageurs sncf/jour" name="voyageurs" required>
+                </label>
+              </div>
+            </div>
+        </div>
+            </div>
+    <div class="grid-x grid-padding-x align-center">
+     <button class ="button" type="submit">Prédiction</button>
+     </div>
+  </form>
+
+
+</div>
+
+<br>
+<br>
+
+<br>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+    </div>
+{% include 'bas.html' %}

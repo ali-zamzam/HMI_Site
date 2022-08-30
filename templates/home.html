@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+
+}
+
+.header {
+  background-color: #13367c;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #0074cc;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 18.5px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #001d52;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: #001d52;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+<div class="grid-x grid-margin-x align-center">
+  <div id="navbar">
+    <a class="active" href="/index">Home</a>
+    <a class="p-2" href="/predictions/{{ profile }}">visualisations des predictions</a>
+    <a class="p-2" href="/modele_predictive/{{ profile }}">Voitures/modèle prédictive</a>
+<!--    <a class="p-2" href="/parametre/{{ profile }}">parametre</a>-->
+<!--    <a class="p-2" href="/">Log out</a>-->
+
+<!--  <a class="active" href="/info/{{ profile }}">info</a>-->
+  </div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
+
+{% include 'bas.html' %}

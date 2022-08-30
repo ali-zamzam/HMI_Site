@@ -1,0 +1,48 @@
+{% include 'head.html' %}
+{% include 'menu.html' %}
+
+<hr>
+<br>
+<div class="grid-x grid-margin-x align-center">
+
+<h1>Ajoutez un nouvel utilisateur</h1>
+</div>
+<div class="grid-x grid-margin-x align-center">
+    <form class="modal-content animate" action="/parametresave/{{ profile }}" method="POST">
+        <div class="grid-x grid-padding-x">
+              <div class="medium-6 cell">
+                    <label for="pseudo"><b>Pseudo</b>
+                        <input type="text" placeholder="Enter Username" name="pseudo" required>
+                    </label>
+              </div>
+        <div class="medium-6 cell">
+                <label for="key"><b>Key</b>
+                    <input type="text" placeholder="Enter key" name="keykey" required>
+                </label>
+          </div>
+
+        <div class="medium-6 cell">
+                <label for="password"><b>Password</b>
+                     <input type="password" placeholder="Enter Password" name="password" required>
+                </label>
+              </div>
+            </div>
+    <div class="grid-x grid-padding-x align-center">
+          <button class ="button" type="submit">Sauvgarder</button>
+    </div>
+  </form>
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+{% include 'bas.html' %}
